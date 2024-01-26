@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Crear parametro</title>
+    
 </head>
+<style>
+
+
+
+</style>
 <body>
     <ul class ="lista-navegacion">
         <li class ="item-navegacion"><a href="../index.html">Home</a></li>
@@ -34,17 +40,17 @@
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <h1 class="text-secondary">crear parametro</h1>
-                    <form method="POST">
+                    <form>
                         <br><label>Nombre de parametro:</label></br>
-                        <br><input type="text" name="nombre_parametro"></br>
+                        <br><input type="text" Id="nombre_parametro" name="nombre_parametro" required></br>
                         <br>
                         <br><label>Simbolo de parametro:</label></br>
-                        <br><input type="text" name="simbolo_parametro"></br>
+                        <br><input type="text" Id="simbolo_parametro" name="simbolo_parametro" required></br>
                         <br>
                         <br><label>Peso molecular:</label></br>
-                        <br><input type="text" name="peso_molecular"></br>
+                        <br><input type="text" Id="peso_molecular" name="peso_molecular" required></br>
                         <br>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary parametro">
                             Guardar
                         </button>
                     </form>
@@ -52,4 +58,5 @@
         </div>
     </main>
 </body>
+<script src="../script_parametro.js"></script>
 </html>

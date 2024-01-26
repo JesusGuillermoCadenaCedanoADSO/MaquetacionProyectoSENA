@@ -34,23 +34,25 @@
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <h1 class="text-secondary">editar parametro</h1>
-                    <form method="POST">
-                        <br><label>Nombre de parametro:</label></br>
-                        <br><input type="text" name="nombre_parametro"></br>
+                    <form >
+                        <br><label  for="nombre_parametro">Nombre de parametro:</br>
+                        <br><input type="text" id="nombre_parametro" name="nombre_parametro" required></br>
+                        <span class="error" aria-live="polite"></span>
+                        </label>
                         <br>
                         <br><label>Simbolo de parametro:</label></br>
-                        <br><input type="text" name="simbolo_parametro"></br>
+                        <br><input type="text" Id="simbolo_parametro" name="simbolo_parametro" required></br>
                         <br>
                         <br><label>Peso molecular:</label></br>
-                        <br><input type="text" name="peso_molecular"></br>
+                        <br><input type="text" Id="peso_molecular" name="peso_molecular" required></br>
                         <br>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary parametro">
                             Actualizar
                         </button>
                     </form>
                     <br>                    
                     <form action="#" method="POST">
-                        <button class="btn btn-danger">
+                        <button class="btn btn-danger eliminar_parametro">
                             Eliminar
                         </button>
                     </form>
@@ -58,4 +60,7 @@
         </div>
     </main>
 </body>
+<script src="../script_parametro.js">
+   
+</script>
 </html>

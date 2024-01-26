@@ -29,6 +29,7 @@ body{
 }
 
 
+
 ul{
     margin:0;
     padding:0;
@@ -44,6 +45,7 @@ ul li{
     line-height: 40px;
     text-align:center;
     font-size:20px;
+    
 }
 
 ul li a{
@@ -54,6 +56,11 @@ ul li a{
 
 ul li a:hover{
     background-color: lightsalmon;
+    z-index: 1;
+}
+
+.lista-navegacion .item-navegacion:hover .menu-desplegable {
+    z-index: 1;
 }
 
 ul li ul li{

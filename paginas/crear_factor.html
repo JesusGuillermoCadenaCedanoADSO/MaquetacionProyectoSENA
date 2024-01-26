@@ -34,20 +34,20 @@
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <h1 class="text-secondary">crear factor</h1>
-                    <form method="POST">
+                    <form>
                         <br><label>Nombre de parametro:</label></br>
-                        <br><input type="text" name="nombre_parametro"></br>
+                        <br><input type="text" Id="nombre_parametro_factor" name="nombre_parametro" required></br>
                         <br>
                         <br><label>Unidad de origen:</label></br>
-                        <br><input type="text" name="unidad_origen"></br>
+                        <br><input type="text" Id="unidad_origen" name="unidad_origen" required></br>
                         <br>
                         <br><label>Unidad de destino:</label></br>
-                        <br><input type="text" name="unidad_destino"></br>
+                        <br><input type="text" Id="unidad_destino" name="unidad_destino" required></br>
                         <br>
                         <br><label>Factor:</label></br>
-                        <br><input type="text" name="valor_factor"></br>
+                        <br><input type="text" Id="valor_factor" name="valor_factor" required></br>
                         <br>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary factor">
                             Guardar
                         </button>
                     </form>
@@ -55,4 +55,5 @@
         </div>
     </main>
 </body>
+<script src="../script_factor.js"></script>
 </html>
