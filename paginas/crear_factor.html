@@ -34,26 +34,33 @@
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <h1 class="text-secondary">crear factor</h1>
-                    <form>
-                        <br><label>Nombre de parametro:</label></br>
-                        <br><input type="text" Id="nombre_parametro_factor" name="nombre_parametro" required></br>
-                        <br>
-                        <br><label>Unidad de origen:</label></br>
-                        <br><input type="text" Id="unidad_origen" name="unidad_origen" required></br>
-                        <br>
-                        <br><label>Unidad de destino:</label></br>
-                        <br><input type="text" Id="unidad_destino" name="unidad_destino" required></br>
-                        <br>
-                        <br><label>Factor:</label></br>
-                        <br><input type="text" Id="valor_factor" name="valor_factor" required></br>
-                        <br>
-                        <button class="btn btn-primary factor">
-                            Guardar
-                        </button>
-                    </form>
+                <form>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre de parametro:</label>
+                            <input type="text" Id="nombre_parametro_factor" name="nombre_parametro" required></br>
+                        </div>
+                        <div class="input-field">
+                            <label>Unidad de origen:</label>
+                            <input type="text" Id="unidad_origen" name="unidad_origen" required></br>
+                        </div>
+                        <div class="input-field">
+                            <label>Unidad de destino:</label>
+                            <input type="text" Id="unidad_destino" name="unidad_destino" required></br>
+                        </div>
+                        <div class="input-field">
+                            <label>Factor:</label>
+                            <input type="number" Id="valor_factor" name="valor_factor" required></br>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary factor">
+                        Guardar
+                    </button>
+                </form>
             </div>
         </div>
     </main>
 </body>
-<script src="../script_factor.js"></script>
+<script src="../jquery-3.7.1.min.js"></script>
+<script src="../validar_formularios.js"></script>
 </html>

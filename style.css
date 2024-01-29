@@ -2,14 +2,40 @@
     box-sizing: border-box;
 }
 
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
 nav,
 main,
 header,
 footer{
     padding: 16px;
     text-align: center;
-
 }
+
+/* para campos de formulario */
+
+label {
+    display: inline-block;
+    width:100px;
+}
+
+.container form .fields{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+
+.container form .fields .input-field {
+    padding: 5px;
+}
+
+/* para barra de navegacion */
 
 .lista-navegacion{
     background-color: teal;
@@ -21,14 +47,6 @@ footer{
     justify-content: space-around;
     width: 100%;
 }
-
-body{
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
-}
-
-
 
 ul{
     margin:0;
@@ -66,8 +84,6 @@ ul li a:hover{
 ul li ul li{
     display:none;
 }
-
-
 
 ul li:hover ul li{
     display:block ;
